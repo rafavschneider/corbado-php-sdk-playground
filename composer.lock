@@ -4,24 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1650137412dc24ba8be945bad9d079fb",
+    "content-hash": "7fd326a8590460fa193eae8a04fe29ca",
     "packages": [
         {
             "name": "corbado/php-sdk",
-            "version": "1.0.2",
+            "version": "dev-fix-php7.2-compatibility",
             "source": {
                 "type": "git",
-                "url": "https://github.com/corbado/corbado-php.git",
-                "reference": "cfd0c08bbfbb8ccd51433cc8efc1a7891e8af60c"
+                "url": "https://github.com/rafavschneider/corbado-php.git",
+                "reference": "f2beee3bc90baf5cffd6d32995fae6c5a9846cea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/corbado/corbado-php/zipball/cfd0c08bbfbb8ccd51433cc8efc1a7891e8af60c",
-                "reference": "cfd0c08bbfbb8ccd51433cc8efc1a7891e8af60c",
+                "url": "https://api.github.com/repos/rafavschneider/corbado-php/zipball/f2beee3bc90baf5cffd6d32995fae6c5a9846cea",
+                "reference": "f2beee3bc90baf5cffd6d32995fae6c5a9846cea",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "^7.4"
+                "guzzlehttp/guzzle": "^7.4",
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -29,7 +30,6 @@
                     "Corbado\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -42,10 +42,9 @@
             "description": "This client allows you to easy access API from Corbado GmbH",
             "homepage": "https://www.corbado.com",
             "support": {
-                "issues": "https://github.com/corbado/corbado-php/issues",
-                "source": "https://github.com/corbado/corbado-php/tree/v1.0.2"
+                "source": "https://github.com/rafavschneider/corbado-php/tree/fix-php7.2-compatibility"
             },
-            "time": "2023-03-17T12:48:00+00:00"
+            "time": "2024-06-17T04:54:56+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -647,7 +646,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "corbado/php-sdk": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,5 +1,11 @@
 {
-    "require": {
-        "corbado/php-sdk": "^1.0"
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:rafavschneider/corbado-php.git"
     }
+  ],
+  "require": {
+    "corbado/php-sdk": "dev-fix-php7.2-compatibility"
+  }
 }
