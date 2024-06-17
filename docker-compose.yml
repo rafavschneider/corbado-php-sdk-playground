@@ -1,0 +1,14 @@
+services:
+  corbado-sdk-php-version-requirement:
+    build:
+      context: .
+      args:
+        USER_ID: ${USER_ID}
+        GROUP_ID: ${GROUP_ID}
+    container_name: corbado-php-sdk
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    command: bash
+    stdin_open: true
+    tty: true
